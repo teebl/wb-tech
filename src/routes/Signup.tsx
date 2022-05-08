@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box } from "../components/composition";
+import { Box } from "../components/shared/composition";
 
 const Signup: FC = () => (
   <div>
