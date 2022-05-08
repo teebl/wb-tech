@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Box } from "../components/shared/composition";
+import { EmailInput, PasswordInput } from "../components/shared/form/";
 
 const Signup: FC = () => (
   <div>
@@ -9,8 +10,8 @@ const Signup: FC = () => (
         Tackle timecards, payroll, and insurance with Wrapbook, a powerful and
         easy to use platform for managing productions.
       </p>
-      <input type="email" placeholder="Enter your email address" />
-      <input type="password" placeholder="Enter a password" />
+      <EmailInput />
+      <PasswordInput />
       <button>Continue to Wrapbook</button>
     </Box>
   </div>

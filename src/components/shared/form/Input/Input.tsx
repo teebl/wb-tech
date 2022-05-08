@@ -1,9 +1,4 @@
-import React, {
-  FC,
-  HTMLInputTypeAttribute,
-  InputHTMLAttributes,
-  ReactNode,
-} from "react";
+import React, { FC, InputHTMLAttributes, ReactNode } from "react";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
   children?: ReactNode | ReactNode[];
