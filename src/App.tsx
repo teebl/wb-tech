@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { DefaultLayout } from "./components/layouts";
+import { DefaultLayout } from "./layouts";
 
 const Dashboard = lazy(() => import("./routes/Dashboard"));
 const Signup = lazy(() => import("./routes/Signup"));
