@@ -3,13 +3,21 @@ import { NavLink } from "./Navlink";
 
 const Navbar: FC = () => {
   return (
-    <nav>
-      <NavLink to="/">Wrapbook</NavLink>
-      <ul>
+    <nav className="flex flex-row	justify-between py-4 max-w-screen-xl">
+      <NavLink to="/" className="text-lg font-bold">
+        Wrapbook
+      </NavLink>
+      <ul className="flex gap-x-1">
         <li>
-          <NavLink to="/">Link</NavLink>
-          <NavLink to="/">Link</NavLink>
+          <NavLink to="/404">Link</NavLink>
+        </li>
+        <li>
+          <NavLink to="/404">Link</NavLink>
+        </li>
+        <li>
           <NavLink to="/login">Login</NavLink>
+        </li>
+        <li>
           <NavLink to="signup">Signup</NavLink>
         </li>
       </ul>
