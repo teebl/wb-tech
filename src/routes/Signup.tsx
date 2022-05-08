@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Box } from "../components/shared/composition";
 import { EmailInput, PasswordInput } from "../components/shared/form/";
+import { Button } from "../components/shared/action";
 
 const Signup: FC = () => (
   <div>
@@ -12,7 +13,7 @@ const Signup: FC = () => (
       </p>
       <EmailInput />
       <PasswordInput />
-      <button>Continue to Wrapbook</button>
+      <Button>Continue to Wrapbook</Button>
     </Box>
   </div>
 );
