@@ -1,8 +1,6 @@
 import React, { FC } from "react";
 import { Box } from "../../shared/composition";
 import invite from "../../../assets/invite.svg";
-import { Link } from "react-router-dom";
-import { NavLink } from "../../navigation/Navbar/Navlink";
 import { Button } from "../../shared/action";
 
 const InvitePeople: FC = () => {
