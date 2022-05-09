@@ -11,6 +11,7 @@ const Button: FC<Props> = ({ className, children, ...rest }) => {
     "rounded-xl",
     "py-3",
     "px-4",
+    "my-2",
     "bg-blue-700",
     "text-white",
     "w-full",

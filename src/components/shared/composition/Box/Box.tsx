@@ -1,7 +1,12 @@
 import React, { FC, HTMLProps, ReactNode } from "react";
 import { mergeClassNames } from "../../../../helpers";
 
-const Box: FC<HTMLProps<HTMLDivElement>> = ({
+interface Props extends HTMLProps<HTMLDivElement> {
+  backgroundColor?: "white" | "peach";
+}
+
+const Box: FC<Props> = ({
+  backgroundColor = "white",
   className,
   children,
   ...rest
@@ -10,8 +15,8 @@ const Box: FC<HTMLProps<HTMLDivElement>> = ({
     className,
     "shadow-md",
     "p-8",
-    "bg-white",
-    "rounded-xl"
+    "rounded-xl",
+    backgrounds[backgroundColor]
   );
 
   return (
@@ -19,6 +24,11 @@ const Box: FC<HTMLProps<HTMLDivElement>> = ({
       {children}
     </div>
   );
+};
+
+const backgrounds = {
+  white: "bg-white",
+  peach: "bg-orange-50",
 };
 
 export { Box };

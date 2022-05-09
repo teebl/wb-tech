@@ -5,7 +5,7 @@ const Dashboard: FC = () => (
   <div className="pt-12 min-h-full">
     <section className="mb-12">
       <h1>Your company Dashboard</h1>
-      <h3>
+      <h3 className="text-slate-600">
         Manage people, view history &amp; see how your projects are doing.
       </h3>
     </section>
