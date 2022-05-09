@@ -1,12 +1,25 @@
 import React, { ButtonHTMLAttributes, FC, ReactNode } from "react";
+import { mergeClassNames } from "../../../../helpers";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode | ReactNode[];
 }
 
-const Button: FC<Props> = ({ children, ...rest }) => {
+const Button: FC<Props> = ({ className, children, ...rest }) => {
+  const classNames = mergeClassNames(
+    className,
+    "rounded-xl",
+    "py-3",
+    "px-4",
+    "bg-blue-700",
+    "text-white",
+    "w-full",
+    "font-semibold",
+    "disabled:bg-slate-400"
+  );
+
   return (
-    <button type="button" {...rest}>
+    <button className={classNames} type="button" {...rest}>
       {children}
     </button>
   );

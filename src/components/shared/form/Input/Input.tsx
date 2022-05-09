@@ -15,8 +15,10 @@ const Input: FC<Props> = ({ children, className, ...rest }) => {
     "border-1",
     "rounded-xl",
     "bg-slate-100",
-    "w-full"
+    "w-full",
+    "focus:bg-white"
   );
+
   return (
     <input className={classNames} {...rest}>
       {children}
