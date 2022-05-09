@@ -1,5 +1,5 @@
 import React, { FC, HTMLProps, ReactNode } from "react";
-import { Box, Checklist, Pill } from "../../../shared/composition";
+import { Box, CheckedList, Pill } from "../../../shared/composition";
 import invite from "../../../../assets/invite.svg";
 
 const PersonCard: FC<HTMLProps<HTMLDivElement>> = ({ ...rest }) => {
@@ -24,7 +24,7 @@ const PersonCard: FC<HTMLProps<HTMLDivElement>> = ({ ...rest }) => {
         <Pill icon="coin">Paid: $0.00</Pill>
       </div>
       <hr className="hidden lg:block my-4" />
-      <Checklist completedTasks={["Account created", "Onboarded"]} />
+      <CheckedList completedTasks={["Account created", "Onboarded"]} />
     </Box>
   );
 };

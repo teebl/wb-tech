@@ -1,11 +1,11 @@
-import React, { FC, HTMLProps } from "react";
+import React, { FC } from "react";
 import checkmark from "../../../../assets/checkmark.svg";
 
 interface Props {
   completedTasks: string[];
 }
 
-const Checklist: FC<Props> = ({ completedTasks }) => {
+const CheckedList: FC<Props> = ({ completedTasks }) => {
   const renderCompletedTask = (task: string) => (
     <div className="flex flex-row gap-1">
       <img src={checkmark} />
@@ -20,4 +20,4 @@ const Checklist: FC<Props> = ({ completedTasks }) => {
   );
 };
 
-export { Checklist };
+export { CheckedList };
