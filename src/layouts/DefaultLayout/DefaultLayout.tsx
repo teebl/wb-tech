@@ -4,9 +4,9 @@ import { Navbar } from "../../components/navigation";
 
 const DefaultLayout: FC = () => {
   return (
-    <div className="w-100 flex flex-col max-w-screen-xl m-auto">
+    <div className="w-100 flex flex-col max-w-screen-xl m-auto min-h-full h-full">
       <Navbar />
-      <main>
+      <main className="flex-grow-2 h-full">
         <Outlet />
       </main>
     </div>

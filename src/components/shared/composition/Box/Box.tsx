@@ -6,7 +6,7 @@ interface Props {
 
 const Box: FC<Props> = ({ children, ...rest }) => {
   return (
-    <div className="shadow-md" {...rest}>
+    <div className="shadow-md p-8 bg-white rounded-xl " {...rest}>
       {children}
     </div>
   );
