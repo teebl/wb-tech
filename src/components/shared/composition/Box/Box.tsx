@@ -1,12 +1,21 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC, HTMLProps, ReactNode } from "react";
+import { mergeClassNames } from "../../../../helpers";
 
-interface Props {
-  children?: ReactNode;
-}
+const Box: FC<HTMLProps<HTMLDivElement>> = ({
+  className,
+  children,
+  ...rest
+}) => {
+  const classNames = mergeClassNames(
+    className,
+    "shadow-md",
+    "p-8",
+    "bg-white",
+    "rounded-xl"
+  );
 
-const Box: FC<Props> = ({ children, ...rest }) => {
   return (
-    <div className="shadow-md p-8 bg-white rounded-xl " {...rest}>
+    <div className={classNames} {...rest}>
       {children}
     </div>
   );
