@@ -5,24 +5,21 @@ import {
   CircleImage,
   Pill,
 } from "../../../shared/composition";
-import invite from "../../../../assets/invite.svg";
 
-interface Props {
-  id: string;
+interface Props extends HTMLProps<HTMLDivElement> {
   name: string;
-  email: string;
   imgSrc?: string;
 }
 
-const PersonCard: FC<HTMLProps<HTMLDivElement>> = ({ id, name }) => {
+const PersonCard: FC<Props> = ({ imgSrc, name }) => {
   return (
     <Box className="w-full">
       <div className="flex gap-6 flex-row">
         <CircleImage
           height="64"
           width="64"
-          src={invite}
-          alt="profile image of person"
+          src={imgSrc}
+          alt={`profile image of ${name}`}
         />
         <div>
           <h2>{name}</h2>
