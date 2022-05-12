@@ -6,7 +6,7 @@ import { Button } from "../../shared/action";
 const InvitePeople: FC = () => {
   return (
     <Box
-      className=" flex flex-col align-center text-center max-w-[20.5rem]"
+      className="flex flex-col align-center text-center max-w-[20.5rem] h-min"
       backgroundColor="peach"
     >
       <img
