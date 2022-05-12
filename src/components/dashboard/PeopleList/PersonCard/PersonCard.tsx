@@ -1,12 +1,17 @@
 import React, { FC, HTMLProps, ReactNode } from "react";
-import { Box, CheckedList, Pill } from "../../../shared/composition";
+import {
+  Box,
+  CheckedList,
+  CircleImage,
+  Pill,
+} from "../../../shared/composition";
 import invite from "../../../../assets/invite.svg";
 
 const PersonCard: FC<HTMLProps<HTMLDivElement>> = ({ ...rest }) => {
   return (
     <Box className="w-full" {...rest}>
       <div className="flex gap-6 flex-row">
-        <img
+        <CircleImage
           height="64"
           width="64"
           src={invite}

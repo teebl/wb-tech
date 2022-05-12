@@ -1,18 +1,19 @@
 import React, { FC } from "react";
-import { Box } from "../../shared/composition";
+import { Box, CircleImage } from "../../shared/composition";
 import invite from "../../../assets/invite.svg";
 import { Button } from "../../shared/action";
 
 const InvitePeople: FC = () => {
   return (
     <Box
-      className="flex flex-col align-center text-center max-w-[20.5rem] h-min"
+      className="flex flex-col items-center text-center max-w-[20.5rem] h-min"
       backgroundColor="peach"
     >
-      <img
+      <CircleImage
         height="96"
         width="96"
         src={invite}
+        className="bg-white"
         alt="image depicting a friendly character putting an envelope in a mailbox"
       />
       <h2>Invite people to this project</h2>
