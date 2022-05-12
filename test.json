@@ -1,0 +1,57 @@
+{
+  "message": "FAKE DATA",
+  "collection": [
+    {
+      "id": 1,
+      "name": "Delbert Hartmann",
+      "email": "edra_kerluke@friesen.org"
+    },
+    { "id": 2, "name": "Jacquiline Jaskolski", "email": "lelah@mraz.net" },
+    { "id": 3, "name": "Rosy Fritsch IV", "email": "jerome@oconnell-dach.com" },
+    { "id": 4, "name": "Taisha Kautzer", "email": "kasey@miller.io" },
+    { "id": 5, "name": "Hipolito Bahringer", "email": "timothy@predovic.io" },
+    {
+      "id": 6,
+      "name": "Mr. Orpha Larson",
+      "email": "grover_harvey@schamberger-bergstrom.com"
+    },
+    {
+      "id": 7,
+      "name": "Gov. Aleen Schamberger",
+      "email": "kasey@kshlerin.net"
+    },
+    { "id": 8, "name": "Ofelia Boyer", "email": "beulah.stroman@bernier.name" },
+    { "id": 9, "name": "Onie Lehner", "email": "rodrick@friesen.info" },
+    {
+      "id": 10,
+      "name": "Johnie Feeney",
+      "email": "filiberto@barrows-bashirian.org"
+    },
+    {
+      "id": 11,
+      "name": "Emmitt Kunze Jr.",
+      "email": "josue@hettinger-kuphal.io"
+    },
+    {
+      "id": 12,
+      "name": "Wesley Ondricka",
+      "email": "cleveland_ondricka@okuneva.com"
+    },
+    { "id": 13, "name": "Wilber Gerlach", "email": "ofelia_zulauf@wolff.io" },
+    { "id": 14, "name": "Stanley Grady DC", "email": "clifton@kreiger.org" },
+    {
+      "id": 15,
+      "name": "Andy Bashirian Esq.",
+      "email": "guillermo_fritsch@hoeger.org"
+    },
+    {
+      "id": 16,
+      "name": "Cecil Leffler",
+      "email": "abraham_legros@schaefer-kertzmann.io"
+    },
+    { "id": 17, "name": "Kirstin Rau IV", "email": "selma@nader-mills.org" },
+    { "id": 18, "name": "Sanora Kohler", "email": "gale@mertz.info" },
+    { "id": 19, "name": "Delaine Stanton", "email": "wilfredo@price.info" },
+    { "id": 20, "name": "Gayle Wiza", "email": "ora@langworth-hermann.co" }
+  ]
+}

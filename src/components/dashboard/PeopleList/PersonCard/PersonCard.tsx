@@ -7,9 +7,16 @@ import {
 } from "../../../shared/composition";
 import invite from "../../../../assets/invite.svg";
 
-const PersonCard: FC<HTMLProps<HTMLDivElement>> = ({ ...rest }) => {
+interface Props {
+  id: string;
+  name: string;
+  email: string;
+  imgSrc?: string;
+}
+
+const PersonCard: FC<HTMLProps<HTMLDivElement>> = ({ id, name }) => {
   return (
-    <Box className="w-full" {...rest}>
+    <Box className="w-full">
       <div className="flex gap-6 flex-row">
         <CircleImage
           height="64"
@@ -18,8 +25,8 @@ const PersonCard: FC<HTMLProps<HTMLDivElement>> = ({ ...rest }) => {
           alt="profile image of person"
         />
         <div>
-          <h2>Person Namerson</h2>
-          <p>Person Namerson</p>
+          <h2>{name}</h2>
+          <p>Position · Occupation</p>
         </div>
       </div>
       <hr className="hidden lg:block my-4" />

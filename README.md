@@ -28,3 +28,8 @@ eg: `@components` instead of `../../../../../components`. Fought with CRA for an
 Mixed feelings about setting up routes and components. I feel like the water is kind of muddy there. If I were to do it again, I'd probably be more inclined to keep any route-specific component in the folder of the route they belong to.
 
 This one really boils down to taste, and it's not really an issue for Wrapbook, considering the opinionation of the RoR framework. Although, I'm definitely curious how skinny you keep your controllers...
+
+
+## Skeletons
+
+Sorry, not available in the trial version
