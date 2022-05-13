@@ -20,8 +20,8 @@ const PeopleList: FC = () => {
 
   return (
     <div className="min-w-[20rem] w-full flex-grow-2 flex flex-col gap-6 w-100">
-      {people.map(({ id, name }) => (
-        <PersonCard key={id} name={name} imgSrc={user} />
+      {people.map(({ id, name, email }) => (
+        <PersonCard key={id} name={name} email={email} imgSrc={user} />
       ))}
     </div>
   );
