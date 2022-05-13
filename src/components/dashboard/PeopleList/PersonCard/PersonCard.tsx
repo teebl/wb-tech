@@ -5,6 +5,7 @@ import {
   CircleImage,
   Pill,
 } from "../../../shared/composition";
+import chevronSVG from "../../../../assets/chevron.svg";
 
 interface Props extends HTMLProps<HTMLDivElement> {
   name: string;
@@ -14,18 +15,21 @@ interface Props extends HTMLProps<HTMLDivElement> {
 const PersonCard: FC<Props> = ({ imgSrc, name }) => {
   return (
     <Box className="w-full">
-      <div className="flex gap-6 flex-row">
-        <CircleImage
-          height="64"
-          width="64"
-          src={imgSrc}
-          alt={`profile image of ${name}`}
-        />
-        <div>
-          <h2>{name}</h2>
-          <p>Position · Occupation</p>
+      <a className="flex gap-6 flex-row justify-between" href="#person">
+        <div className="flex gap-6 flex-row">
+          <CircleImage
+            height="64"
+            width="64"
+            src={imgSrc}
+            alt={`profile image of ${name}`}
+          />
+          <div>
+            <h2>{name}</h2>
+            <p>Position · Occupation</p>
+          </div>
         </div>
-      </div>
+        <img src={chevronSVG} />
+      </a>
       <hr className="hidden lg:block my-4" />
       <div className="hidden lg:flex flex-row gap-3">
         <Pill icon="clock">Pending: $7.00</Pill>
