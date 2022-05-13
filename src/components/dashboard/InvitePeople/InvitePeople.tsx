@@ -1,10 +1,12 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { Box, CircleImage } from "../../shared/composition";
 import invite from "../../../assets/invite.svg";
 import { Button } from "../../shared/action";
 import { copyText } from "../../../helpers";
 
 const InvitePeople: FC = () => {
+  const [justCopied, setJustCopied] = useState(false);
+
   const link = "https://wrapbook.com/i/j93kda92";
 
   const renderMobileInvitePeople = () => (
@@ -17,6 +19,14 @@ const InvitePeople: FC = () => {
       </a>
     </div>
   );
+
+  const copyAction = () => {
+    copyText(link);
+    setJustCopied(true);
+    setTimeout(() => {
+      setJustCopied(false);
+    }, 3000);
+  };
 
   return (
     <div>
@@ -44,7 +54,9 @@ const InvitePeople: FC = () => {
             {link}
           </a>
         </div>
-        <Button onClick={() => copyText(link)}>Copy to Clipboard</Button>
+        <Button aria-hidden="true" onClick={copyAction}>
+          {justCopied ? "Copied!" : "Copy to Clipboard"}
+        </Button>
       </Box>
       {renderMobileInvitePeople()}
     </div>
