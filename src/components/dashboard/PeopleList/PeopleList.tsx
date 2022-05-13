@@ -5,7 +5,9 @@ import user from "../../../assets/user.svg";
 const PeopleList: FC = () => {
   const [people, setPeople] = useState([]);
   const makeCall = async () => {
-    await fetch("/people")
+    await fetch(
+      "http://cors.io/?https://castandcrew.herokuapp.com/people?format=json"
+    )
       .then((response) => response.json())
       .then((data) => {
         setPeople(data.collection);

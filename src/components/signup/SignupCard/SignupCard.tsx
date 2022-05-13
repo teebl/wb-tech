@@ -107,7 +107,6 @@ const SignupCard: FC = () => {
         type="password"
         placeholder="Enter a password"
         onEnter={() => {
-          console.log("enter");
           nextStep();
         }}
         className={step !== "password" ? "hidden" : ""}
