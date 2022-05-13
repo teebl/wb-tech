@@ -4,7 +4,7 @@ import { NavLink } from "./Navlink";
 
 const Navbar: FC = () => {
   const location = useLocation();
-  const isSignedIn = () => location.pathname !== "/signup";
+  const isSignedIn = () => !location.pathname.includes("/signup");
 
   return (
     <nav className="flex flex-row	justify-between py-4 max-w-screen-xl">
