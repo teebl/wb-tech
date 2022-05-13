@@ -7,7 +7,7 @@ const Dashboard = lazy(() => import("./routes/Dashboard"));
 const Signup = lazy(() => import("./routes/Signup"));
 
 const App = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
