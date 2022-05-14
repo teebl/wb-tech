@@ -8,13 +8,13 @@ interface Props {
 const CheckedList: FC<Props> = ({ completedTasks }) => {
   const renderCompletedTask = (task: string, index: number) => (
     <div key={`task-${index}`} className="flex flex-row gap-1">
-      <img src={checkmark} />
-      <span>{task}</span>
+      <img src={checkmark} height="24" width="24" />
+      <span className="truncate">{task}</span>
     </div>
   );
 
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-4 pt-8 lg:p-0">
       {completedTasks.map(renderCompletedTask)}
     </div>
   );

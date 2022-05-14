@@ -24,31 +24,35 @@ const PersonCard: FC<Props> = ({ imgSrc, name, email, country, city }) => {
     <Box className="w-full">
       <a
         className="flex gap-6 flex-row justify-between"
-        href={`mailto:${email}"`}
+        href={`mailto:${email}`}
       >
-        <div className="flex gap-6 flex-row">
+        <div className="flex gap-6 flex-row min-w-0">
           <CircleImage
             height="64"
             width="64"
             src={imgSrc}
             alt={`profile image of ${name}`}
           />
-          <div>
-            <h2>{name}</h2>
-            <p>
+          <div className="min-w-0 overflow-hidden">
+            <h2 className="truncate" title={name}>
+              {name}
+            </h2>
+            <p className="truncate" title={`${country} · ${city}`}>
               {country} · {city}
             </p>
           </div>
         </div>
-        <img src={chevronSVG} />
+        <div className="my-auto">
+          <img src={chevronSVG} />
+        </div>
       </a>
-      <hr className="hidden lg:block my-4" />
-      <div className="hidden lg:flex flex-row gap-3">
+      <hr className="hidden md:block my-4" />
+      <div className="hidden md:flex flex-row gap-3">
         <Pill icon="clock">Pending: ${randomAmounts[0]}</Pill>
         <Pill icon="clipboard">Approved: ${randomAmounts[1]}</Pill>
         <Pill icon="coin">Paid: ${randomAmounts[2]}</Pill>
       </div>
-      <hr className="hidden lg:block my-4" />
+      <hr className="hidden md:block my-4" />
       <CheckedList completedTasks={["Account created", "Onboarded"]} />
     </Box>
   );

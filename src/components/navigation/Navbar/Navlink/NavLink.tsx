@@ -8,6 +8,7 @@ const NavLink: FC<NavLinkProps> = ({ children, ...rest }) => {
     "py-2",
     "hover:bg-white",
     "hover:shadow-md",
+    "font-medium",
   ];
   const activeClassName = [...className, "shadow-md", "bg-white"];
 

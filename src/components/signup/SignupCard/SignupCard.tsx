@@ -60,7 +60,7 @@ const SignupCard: FC = () => {
       setEmailError(undefined);
       setPasswordError(undefined);
 
-      navigate("/");
+      navigate("/dashboard");
     }
   };
 

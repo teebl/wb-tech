@@ -4,11 +4,11 @@ import { NavLink } from "./Navlink";
 
 const Navbar: FC = () => {
   const location = useLocation();
-  const isSignedIn = () => !location.pathname.includes("/signup");
+  const isSignedIn = () => location.pathname.includes("/dashboard");
 
   return (
     <nav className="flex flex-row	justify-between py-4 max-w-screen-xl">
-      <NavLink to="/" className="text-lg font-bold">
+      <NavLink to="/dashboard" className="text-lg font-bold">
         Wrapbook
       </NavLink>
       <ul className="flex gap-x-1">
@@ -25,7 +25,7 @@ const Navbar: FC = () => {
         )}
         {isSignedIn() && (
           <li>
-            <NavLink to="/signup/">Logout</NavLink>
+            <NavLink to="/">Logout</NavLink>
           </li>
         )}
         {!isSignedIn() && (
@@ -35,7 +35,7 @@ const Navbar: FC = () => {
         )}
         {!isSignedIn() && (
           <li>
-            <NavLink to="signup">Signup</NavLink>
+            <NavLink to="/">Signup</NavLink>
           </li>
         )}
       </ul>
