@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/wb-tech/static/css/main.ccb3ecad.css",
-    "main.js": "/wb-tech/static/js/main.0390799c.js",
-    "static/js/137.7aa01374.chunk.js": "/wb-tech/static/js/137.7aa01374.chunk.js",
-    "static/js/941.42331eeb.chunk.js": "/wb-tech/static/js/941.42331eeb.chunk.js",
+    "main.css": "/wb-tech/static/css/main.e7ea0f83.css",
+    "main.js": "/wb-tech/static/js/main.adee5803.js",
+    "static/js/137.fa72324c.chunk.js": "/wb-tech/static/js/137.fa72324c.chunk.js",
+    "static/js/941.7a77c519.chunk.js": "/wb-tech/static/js/941.7a77c519.chunk.js",
     "static/js/787.a460d294.chunk.js": "/wb-tech/static/js/787.a460d294.chunk.js",
     "static/js/525.ffca9b59.chunk.js": "/wb-tech/static/js/525.ffca9b59.chunk.js",
-    "static/js/55.363b7da3.chunk.js": "/wb-tech/static/js/55.363b7da3.chunk.js",
+    "static/js/55.9017cf98.chunk.js": "/wb-tech/static/js/55.9017cf98.chunk.js",
     "static/media/invite.svg": "/wb-tech/static/media/invite.3d34b9e7cf75f3c46715e16dd275510d.svg",
     "static/media/coin.svg": "/wb-tech/static/media/coin.9a2ed5943721642229517581e5eea281.svg",
     "static/media/clipboard.svg": "/wb-tech/static/media/clipboard.0b8225f2759eee1957c5fe6d27be2d1d.svg",
@@ -14,16 +14,16 @@
     "index.html": "/wb-tech/index.html",
     "static/media/chevron.svg": "/wb-tech/static/media/chevron.4a67e97198dc8b8381f3b148f0eed03d.svg",
     "static/media/checkmark.svg": "/wb-tech/static/media/checkmark.e3c15a7e9b99c49c8c4a5d540f559fd3.svg",
-    "main.ccb3ecad.css.map": "/wb-tech/static/css/main.ccb3ecad.css.map",
-    "main.0390799c.js.map": "/wb-tech/static/js/main.0390799c.js.map",
-    "137.7aa01374.chunk.js.map": "/wb-tech/static/js/137.7aa01374.chunk.js.map",
-    "941.42331eeb.chunk.js.map": "/wb-tech/static/js/941.42331eeb.chunk.js.map",
+    "main.e7ea0f83.css.map": "/wb-tech/static/css/main.e7ea0f83.css.map",
+    "main.adee5803.js.map": "/wb-tech/static/js/main.adee5803.js.map",
+    "137.fa72324c.chunk.js.map": "/wb-tech/static/js/137.fa72324c.chunk.js.map",
+    "941.7a77c519.chunk.js.map": "/wb-tech/static/js/941.7a77c519.chunk.js.map",
     "787.a460d294.chunk.js.map": "/wb-tech/static/js/787.a460d294.chunk.js.map",
     "525.ffca9b59.chunk.js.map": "/wb-tech/static/js/525.ffca9b59.chunk.js.map",
-    "55.363b7da3.chunk.js.map": "/wb-tech/static/js/55.363b7da3.chunk.js.map"
+    "55.9017cf98.chunk.js.map": "/wb-tech/static/js/55.9017cf98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccb3ecad.css",
-    "static/js/main.0390799c.js"
+    "static/css/main.e7ea0f83.css",
+    "static/js/main.adee5803.js"
   ]
 }
