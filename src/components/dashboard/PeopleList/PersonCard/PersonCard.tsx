@@ -1,4 +1,4 @@
-import React, { FC, HTMLProps, ReactNode } from "react";
+import React, { FC, HTMLProps } from "react";
 import {
   Box,
   CheckedList,

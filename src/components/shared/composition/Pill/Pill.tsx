@@ -1,5 +1,4 @@
-import React, { FC, HTMLProps, ReactNode } from "react";
-import { mergeClassNames } from "../../../../helpers";
+import React, { FC, HTMLProps } from "react";
 import clockSVG from "../../../../assets/clock.svg";
 import coinSVG from "../../../../assets/coin.svg";
 import clipboardSVG from "../../../../assets/clipboard.svg";

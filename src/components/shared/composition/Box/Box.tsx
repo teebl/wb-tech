@@ -1,4 +1,4 @@
-import React, { FC, HTMLProps, ReactNode } from "react";
+import React, { FC, HTMLProps } from "react";
 import { mergeClassNames } from "../../../../helpers";
 
 interface Props extends HTMLProps<HTMLDivElement> {

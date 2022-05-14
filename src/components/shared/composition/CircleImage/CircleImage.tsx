@@ -1,4 +1,4 @@
-import React, { FC, HTMLProps, ImgHTMLAttributes, ReactNode } from "react";
+import React, { FC, ImgHTMLAttributes } from "react";
 import { mergeClassNames } from "../../../../helpers";
 
 const CircleImage: FC<ImgHTMLAttributes<HTMLImageElement>> = ({

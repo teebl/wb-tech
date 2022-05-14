@@ -115,7 +115,11 @@ const SignupCard: FC = () => {
         onChange={handlePasswordInput}
         value={password}
       />
-      <Button role="submit" onClick={nextStep}>
+      <Button
+        disabled={!emailValid() || !passwordValid()}
+        role="submit"
+        onClick={nextStep}
+      >
         Continue to Wrapbook
       </Button>
     </Box>

@@ -1,7 +1,5 @@
 import React, {
-  FC,
   forwardRef,
-  ForwardRefExoticComponent,
   InputHTMLAttributes,
   KeyboardEventHandler,
   ReactNode,
